@@ -19,7 +19,9 @@ SID=ENTER_SID_VALUE
 
 You must first login to your account on [https://cs-manager.com](https://cs-manager.com) and retrieve your cookie information. 
 
-Once you've logged into your account you need to find your cookie information. To do this, open the inspector (right click page > inspect element), head over to the 'network tab' and refresh the page. In the new list of network events look for the first GET request and click on the row. Now select the 'Cookies' tab to inspect the request. Add the cookie values to your ```.env``` file before you run the script.
+Once you've logged into your account you need to find your cookie information. To do this, open the inspector (```right click page > inspect element```), head over to the ```'Storage'``` tab and refresh the page. On the left hand side select ```Cookies``` and then select ```https://cs-manager.com```. Now on the right hand panel you should see the cookies that you need to use in order to scrape the site. Add these cookie values to your ```.env``` file before you run the script.
+
+Find out more about inspecting cookies [using the chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/storage/cookies).
 
 ### Install requirements
 This tool runs using Python 3.x. Make sure you install the required packages before you run the script using:
